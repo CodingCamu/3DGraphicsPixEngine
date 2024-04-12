@@ -6,7 +6,7 @@ class CmdSetResolution : public Command
 {
 public:
 	const char* GetName() override
-	{
+	{  
 		return "SetResolution";
 	}
 
