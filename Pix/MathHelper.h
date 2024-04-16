@@ -14,4 +14,5 @@ class MathHelper
 	static float Dot(Vector2& a, Vector2& b);
 	static float Dot(Vector3& a, Vector3& b);
 	static Vector3 Cross(Vector3& a, Vector3& b);
+	static float Lerp(float a, float b, float t);
 };
