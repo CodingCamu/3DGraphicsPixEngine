@@ -27,6 +27,11 @@
 #include "CmdPushRotationZ.h"
 #include "CmdPushScaling.h"
 #include "CmdPopMatrix.h"
+<<<<<<< HEAD
+#include "CmdSetCullMode.h"
+#include "CmdEnableDepth.h"
+=======
+>>>>>>> 8f95618 (Assigment 2, 3 and 4)
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -70,8 +75,16 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdVertex>();
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdSetFillMode>();
+<<<<<<< HEAD
+	RegisterCommand<CmdSetCullMode>();
+	RegisterCommand<CmdEnableDepth>();
 }
 
+
+=======
+}
+
+>>>>>>> 8f95618 (Assigment 2, 3 and 4)
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()
 {
 	TextEditor::LanguageDefinition langDef;

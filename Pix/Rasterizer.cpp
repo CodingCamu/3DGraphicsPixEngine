@@ -1,4 +1,8 @@
 #include "Rasterizer.h"
+<<<<<<< HEAD
+#include "DepthBuffer.h"
+=======
+>>>>>>> 8f95618 (Assigment 2, 3 and 4)
 
 Rasterizer* Rasterizer::Get()
 {
@@ -27,8 +31,16 @@ void Rasterizer::DrawPoint(int x, int y)
 
 void Rasterizer::DrawPoint(const Vertex& v)
 {
+<<<<<<< HEAD
+	if (DepthBuffer::Get()->CheckDepthBuffer(v.pos.x, v.pos.y, v.pos.z))
+	{
+		mColor = v.color;
+		DrawPoint(static_cast<int>(v.pos.x), static_cast<int>(v.pos.y));
+	}
+=======
 	mColor = v.color;
 	DrawPoint(static_cast<int>(v.pos.x), static_cast<int>(v.pos.y));
+>>>>>>> 8f95618 (Assigment 2, 3 and 4)
 }
 
 void Rasterizer::DrawLine(const Vertex& v0, const Vertex& v1)

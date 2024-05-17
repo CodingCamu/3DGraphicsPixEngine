@@ -1,0 +1,32 @@
+SetResolution(500, 500, 1)
+
+SetViewport(50, 50, 400, 400)
+SetClipping(true)
+ShowViewport(true)
+SetCameraPosition(0, 0, -3)
+SetCameraDirection(0, 0, 1)
+
+PushTranslation(0,0,0)
+PushRotationZ(-30))
+PushRotationY(-11.5)
+PushRotationX(0)
+PushScaling(1, 1, 1)
+
+BeginDraw(triangle, true)
+
+Vertex(-1, -1,1, 0, 1, 0)
+Vertex(-1, 1, 1, 0, 1, 0)
+Vertex(1, 1, 1, 1, 1, 0)
+Vertex(-1, 1, 1, 0, 0, 1)
+Vertex(1, 1, 1, 0, 1, 0)
+Vertex(1, 1, 1, 0, 1, 0)
+
+Vertex(1, -1, 0, -1, 1, 1)
+Vertex(1, 1, -1, 1, 1, 1)
+Vertex(-1, -1, 1, 0, 0, 1)
+Vertex(1, 1, 1, 0, 0, 1)
+Vertex(1, -1, 1, 0, 0, 1)
+EndDraw()
+
+
+
