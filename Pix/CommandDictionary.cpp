@@ -6,6 +6,7 @@
 #include "CmdSetColor.h"
 #include "CmdForLoop.h"
 #include "CmdSetFillMode.h"
+#include "CmdSetShadeMode.h"
 
 #include "CmdBeginDraw.h"
 #include "CmdVertex.h"
@@ -20,6 +21,16 @@
 #include "CmdSetCameraFOV.h"
 #include "CmdSetCameraNear.h"
 #include "CmdSetCameraPosition.h"
+#include "CmdSetCullMode.h"
+#include "CmdEnableDepth.h"
+
+#include "CmdLights.h"
+#include "CmdMaterial.h"
+#include "CmdModel.h"
+#include "CmdSetTexture.h"
+#include "CmdSetCorrectUV.h"
+#include "CmdSetAddressMode.h"
+#include "CmdSetUseFilter.h"
 
 #include "CmdPushTranslation.h"
 #include "CmdPushRotationX.h"
@@ -27,11 +38,6 @@
 #include "CmdPushRotationZ.h"
 #include "CmdPushScaling.h"
 #include "CmdPopMatrix.h"
-<<<<<<< HEAD
-#include "CmdSetCullMode.h"
-#include "CmdEnableDepth.h"
-=======
->>>>>>> 8f95618 (Assigment 2, 3 and 4)
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -48,6 +54,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetViewport>();
 	RegisterCommand<CmdShowViewport>();
 	RegisterCommand<CmdSetClipping>();
+	RegisterCommand<CmdEnableDepth>();
 
 	// Camera Settings
 	RegisterCommand<CmdSetCameraDirection>();
@@ -55,6 +62,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetCameraFOV>();
 	RegisterCommand<CmdSetCameraNear>();
 	RegisterCommand<CmdSetCameraPosition>();
+	
 
 	// Matrix Setting
 	RegisterCommand<CmdPushTranslation>();
@@ -66,6 +74,28 @@ CommandDictionary::CommandDictionary()
 
 	// Variable commands
 	RegisterCommand<CmdVarFloat>();
+	RegisterCommand<CmdModel>();
+	RegisterCommand<CmdSetTexture>();
+
+	// Lights
+	RegisterCommand<CmdSetLightAmbient>();
+	RegisterCommand<CmdSetLightDiffuse>();
+	RegisterCommand<CmdSetLightSpecular>();
+	RegisterCommand<CmdAddDirectionalLight>();
+	RegisterCommand<CmdAddPointLight>();
+	RegisterCommand<CmdAddSpotLight>();
+
+	// Material
+	RegisterCommand<CmdSetMaterialAmbient>();
+	RegisterCommand<CmdSetMaterialDiffuse>();
+	RegisterCommand<CmdSetMaterialSpecular>();
+	RegisterCommand<CmdSetMaterialEmissive>();
+	RegisterCommand<CmdSetMaterialShininess>();
+
+	// Texturing 
+	RegisterCommand<CmdSetCorrectUV>();
+	RegisterCommand<CmdSetAddressMode>();
+	RegisterCommand<CmdSetUseFilter>();
 
 	// Rasterization commands
 	RegisterCommand<CmdDrawPixel>();
@@ -75,16 +105,10 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdVertex>();
 	RegisterCommand<CmdEndDraw>();
 	RegisterCommand<CmdSetFillMode>();
-<<<<<<< HEAD
 	RegisterCommand<CmdSetCullMode>();
-	RegisterCommand<CmdEnableDepth>();
+	RegisterCommand<CmdSetShadeMode>();
 }
 
-
-=======
-}
-
->>>>>>> 8f95618 (Assigment 2, 3 and 4)
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()
 {
 	TextEditor::LanguageDefinition langDef;

@@ -2,20 +2,20 @@
 
 #include "Command.h"
 
-class CmdEndDraw : public Command
+class CmdSetShadeMode : public Command
 {
 public:
 	const char* GetName() override
 	{
-		return "EndDraw";
+		return "SetShadeMode";
 	}
 
 	const char* GetDescription() override
 	{
 		return
-			"EndDraw\n"
+			"SetShadeMode(<shadeMode>)\n"
 			"\n"
-			"- sends vertices to rasterizer to render";
+			"- Sets the shade mode for the lighting (flat, gouraud, phong).";
 	}
 
 	bool Execute(const std::vector<std::string>& params) override;

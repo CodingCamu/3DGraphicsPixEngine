@@ -9,16 +9,13 @@ enum class Topology
 	Triangle
 };
 
-<<<<<<< HEAD
 enum class CullMode
 {
-	None,
-	Front,
-	Back
+	None,	// don't cull anything
+	Back,	// cull back facing
+	Front	// cull front facing
 };
 
-=======
->>>>>>> 8f95618 (Assigment 2, 3 and 4)
 class PrimitivesManager
 {
 public:
@@ -26,11 +23,10 @@ public:
 
 	~PrimitivesManager();
 
-<<<<<<< HEAD
 	void OnNewFrame();
 	void SetCullMode(CullMode mode);
-=======
->>>>>>> 8f95618 (Assigment 2, 3 and 4)
+	void SetCorrectUV(bool correctUV);
+
 	bool BeginDraw(Topology topology, bool applyTransform = false);
 	void AddVertex(const Vertex& vertex);
 	bool EndDraw();
@@ -40,10 +36,8 @@ private:
 
 	std::vector<Vertex> mVertexBuffer;
 	Topology mTopology = Topology::Triangle;
-<<<<<<< HEAD
 	CullMode mCullMode = CullMode::None;
-=======
->>>>>>> 8f95618 (Assigment 2, 3 and 4)
 	bool mDrawBegin = false;
 	bool mApplyTransform = false;
+	bool mCorrectUV = false;
 };

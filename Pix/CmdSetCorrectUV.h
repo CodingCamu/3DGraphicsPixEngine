@@ -2,20 +2,20 @@
 
 #include "Command.h"
 
-class CmdEndDraw : public Command
+class CmdSetCorrectUV : public Command
 {
 public:
 	const char* GetName() override
 	{
-		return "EndDraw";
+		return "SetCorrectUV";
 	}
 
 	const char* GetDescription() override
 	{
 		return
-			"EndDraw\n"
+			"SetCorrectUV(<bool>)\n"
 			"\n"
-			"- sends vertices to rasterizer to render";
+			"- Enables/Disables using uv perspective correction.";
 	}
 
 	bool Execute(const std::vector<std::string>& params) override;

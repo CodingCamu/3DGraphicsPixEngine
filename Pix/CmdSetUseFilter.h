@@ -2,20 +2,20 @@
 
 #include "Command.h"
 
-class CmdEndDraw : public Command
+class CmdSetUseFilter : public Command
 {
 public:
 	const char* GetName() override
 	{
-		return "EndDraw";
+		return "SetUseFilter";
 	}
 
 	const char* GetDescription() override
 	{
 		return
-			"EndDraw\n"
+			"SetUseFilter(<use>)\n"
 			"\n"
-			"- sends vertices to rasterizer to render";
+			"- Enables/Disables using bilinear filter.";
 	}
 
 	bool Execute(const std::vector<std::string>& params) override;
