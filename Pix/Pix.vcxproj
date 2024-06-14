@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -173,8 +173,13 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Clipper.cpp" />
+    <ClCompile Include="CmdAddDirectionalLight.cpp" />
+    <ClCompile Include="CmdAddPointLight.cpp" />
+    <ClCompile Include="CmdAddSpotLight.cpp" />
     <ClCompile Include="CmdBeginDraw.cpp" />
     <ClCompile Include="CmdEnableDepth.cpp" />
+    <ClCompile Include="CmdSetAddressMode.cpp" />
+    <ClCompile Include="CmdSetCorrectUV.cpp" />
     <ClCompile Include="CmdSetCullMode.cpp" />
     <ClCompile Include="CmdDrawPixel.cpp" />
     <ClCompile Include="CmdEndDraw.cpp" />
@@ -193,7 +198,16 @@
     <ClCompile Include="CmdSetClipping.cpp" />
     <ClCompile Include="CmdSetColor.cpp" />
     <ClCompile Include="CmdSetFillMode.cpp" />
+    <ClCompile Include="CmdSetLightAmbient.cpp" />
+    <ClCompile Include="CmdSetLightDiffuse.cpp" />
+    <ClCompile Include="CmdSetLightSpecular.cpp" />
+    <ClCompile Include="CmdSetMaterialAmbient.cpp" />
+    <ClCompile Include="CmdSetMaterialEmissive.cpp" />
+    <ClCompile Include="CmdSetMaterialShininess.cpp" />
+    <ClCompile Include="CmdSetMaterialSpecular.cpp" />
     <ClCompile Include="CmdSetResolution.cpp" />
+    <ClCompile Include="CmdSetShadeMode.cpp" />
+    <ClCompile Include="CmdSetTexture.cpp" />
     <ClCompile Include="CmdSetViewport.cpp" />
     <ClCompile Include="CmdShowViewport.cpp" />
     <ClCompile Include="CmdVarFloat.cpp" />
@@ -201,6 +215,7 @@
     <ClCompile Include="CommandDictionary.cpp" />
     <ClCompile Include="DepthBuffer.cpp" />
     <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="LightManager.cpp" />
     <ClCompile Include="MathHelper.cpp" />
     <ClCompile Include="MatrixStack.cpp" />
     <ClCompile Include="PixEditor.cpp" />
@@ -220,8 +235,13 @@
   <ItemGroup>
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Clipper.h" />
+    <ClInclude Include="CmdAddDirectionalLight.h" />
+    <ClInclude Include="CmdAddPointLight.h" />
+    <ClInclude Include="CmdAddSpotLight.h" />
     <ClInclude Include="CmdBeginDraw.h" />
     <ClInclude Include="CmdEnableDepth.h" />
+    <ClInclude Include="CmdSetAddressMode.h" />
+    <ClInclude Include="CmdSetCorrectUV.h" />
     <ClInclude Include="CmdSetCullMode.h" />
     <ClInclude Include="CmdDrawPixel.h" />
     <ClInclude Include="CmdEndDraw.h" />
@@ -240,7 +260,16 @@
     <ClInclude Include="CmdSetClipping.h" />
     <ClInclude Include="CmdSetColor.h" />
     <ClInclude Include="CmdSetFillMode.h" />
+    <ClInclude Include="CmdSetLightAmbient.h" />
+    <ClInclude Include="CmdSetLightDiffuse.h" />
+    <ClInclude Include="CmdSetLightSpecular.h" />
+    <ClInclude Include="CmdSetMaterialAmbient.h" />
+    <ClInclude Include="CmdSetMaterialEmissive.h" />
+    <ClInclude Include="CmdSetMaterialShininess.h" />
+    <ClInclude Include="CmdSetMaterialSpecular.h" />
     <ClInclude Include="CmdSetResolution.h" />
+    <ClInclude Include="CmdSetShadeMode.h" />
+    <ClInclude Include="CmdSetTexture.h" />
     <ClInclude Include="CmdSetViewport.h" />
     <ClInclude Include="CmdShowViewport.h" />
     <ClInclude Include="CmdVarFloat.h" />
@@ -249,6 +278,7 @@
     <ClInclude Include="CommandDictionary.h" />
     <ClInclude Include="DepthBuffer.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="LightManager.h" />
     <ClInclude Include="MathHelper.h" />
     <ClInclude Include="Matrix4.h" />
     <ClInclude Include="MatrixStack.h" />

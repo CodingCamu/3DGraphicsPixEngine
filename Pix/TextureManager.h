@@ -5,6 +5,7 @@
 class TextureManager
 {
 public:
+
 	static TextureManager* Get();
 
 	void Clear();
@@ -19,4 +20,6 @@ private:
 	const Texture* mCurrentTexture = nullptr;
 	AddressMode mAddressMode = AddressMode::Clamp;
 	bool mUseFilter = false;
+
+
 };

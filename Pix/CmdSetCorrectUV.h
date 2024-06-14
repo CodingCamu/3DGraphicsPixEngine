@@ -15,8 +15,10 @@ public:
 		return
 			"SetCorrectUV(<bool>)\n"
 			"\n"
-			"- Enables/Disables using uv perspective correction.";
+			"- Corrects UV";
 	}
 
 	bool Execute(const std::vector<std::string>& params) override;
+
+
 };

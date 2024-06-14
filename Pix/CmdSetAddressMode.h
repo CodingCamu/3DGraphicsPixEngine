@@ -15,8 +15,11 @@ public:
 		return
 			"SetAddressMode(<addressMode>)\n"
 			"\n"
-			"- Sets the address mode to render textures (clamp, wrap, mirror, border).";
+			"- Sets the address mode to render textures (clamp, wrap, mirror, border).\n";
 	}
 
 	bool Execute(const std::vector<std::string>& params) override;
+
+
+	
 };
