@@ -1,99 +1,156 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Clipper.cpp" />
-    <ClCompile Include="CmdBeginDraw.cpp" />
-    <ClCompile Include="CmdEnableDepth.cpp" />
-    <ClCompile Include="CmdSetCullMode.cpp" />
-    <ClCompile Include="CmdDrawPixel.cpp" />
-    <ClCompile Include="CmdEndDraw.cpp" />
-    <ClCompile Include="CmdForLoop.cpp" />
-    <ClCompile Include="CmdPopMatrix.cpp" />
-    <ClCompile Include="CmdPushRotationX.cpp" />
-    <ClCompile Include="CmdPushRotationY.cpp" />
-    <ClCompile Include="CmdPushRotationZ.cpp" />
-    <ClCompile Include="CmdPushScaling.cpp" />
-    <ClCompile Include="CmdPushTranslation.cpp" />
-    <ClCompile Include="CmdSetCameraDirection.cpp" />
-    <ClCompile Include="CmdSetCameraFar.cpp" />
-    <ClCompile Include="CmdSetCameraFOV.cpp" />
-    <ClCompile Include="CmdSetCameraNear.cpp" />
-    <ClCompile Include="CmdSetCameraPosition.cpp" />
-    <ClCompile Include="CmdSetClipping.cpp" />
-    <ClCompile Include="CmdSetColor.cpp" />
-    <ClCompile Include="CmdSetFillMode.cpp" />
-    <ClCompile Include="CmdSetResolution.cpp" />
-    <ClCompile Include="CmdSetViewport.cpp" />
-    <ClCompile Include="CmdShowViewport.cpp" />
-    <ClCompile Include="CmdVarFloat.cpp" />
-    <ClCompile Include="CmdVertex.cpp" />
-    <ClCompile Include="CommandDictionary.cpp" />
-    <ClCompile Include="DepthBuffer.cpp" />
-    <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="MathHelper.cpp" />
-    <ClCompile Include="MatrixStack.cpp" />
     <ClCompile Include="PixEditor.cpp" />
-    <ClCompile Include="PrimitivesManager.cpp" />
-    <ClCompile Include="Rasterizer.cpp" />
     <ClCompile Include="ScriptParser.cpp" />
     <ClCompile Include="TextEditor.cpp" />
     <ClCompile Include="VariableCache.cpp" />
     <ClCompile Include="Viewport.cpp" />
     <ClCompile Include="WinMain.cpp" />
-    <ClCompile Include="CmdSetShadeMode.cpp" />
-    <ClCompile Include="CmdSetTexture.cpp" />
-    <ClCompile Include="CmdSetCorrectUV.cpp" />
-    <ClCompile Include="CmdSetAddressMode.cpp" />
-    <ClCompile Include="LightManager.cpp" />
     <ClCompile Include="TextureManager.cpp" />
     <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="MaterialManager.cpp" />
-    <ClCompile Include="LightTypes.cpp" />
-    <ClCompile Include="CmdLights.cpp" />
-    <ClCompile Include="CmdMaterial.cpp" />
-    <ClCompile Include="CmdModel.cpp" />
-    <ClCompile Include="ModelManager.cpp" />
-    <ClCompile Include="CmdSetUseFilter.cpp" />
+    <ClCompile Include="Camera.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Clipper.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdBeginDraw.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdDrawPixel.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdEnableDepth.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdEndDraw.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdForLoop.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLights.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdMaterial.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdModel.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdPopMatrix.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdPushRotationX.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdPushRotationY.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdPushRotationZ.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdPushScaling.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdPushTranslation.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetAddressMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCameraDirection.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCameraFar.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCameraFOV.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCameraNear.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCameraPosition.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetClipping.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetColor.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCorrectUV.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetCullMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetFillMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetResolution.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetShadeMode.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetTexture.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetUseFilter.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdSetViewport.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdShowViewport.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdVarFloat.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdVertex.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandDictionary.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthBuffer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LightManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LightTypes.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixStack.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitivesManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Rasterizer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="Clipper.h" />
-    <ClInclude Include="CmdBeginDraw.h" />
-    <ClInclude Include="CmdEnableDepth.h" />
-    <ClInclude Include="CmdSetCullMode.h" />
-    <ClInclude Include="CmdDrawPixel.h" />
-    <ClInclude Include="CmdEndDraw.h" />
-    <ClInclude Include="CmdForLoop.h" />
-    <ClInclude Include="CmdPopMatrix.h" />
-    <ClInclude Include="CmdPushRotationX.h" />
-    <ClInclude Include="CmdPushRotationY.h" />
-    <ClInclude Include="CmdPushRotationZ.h" />
-    <ClInclude Include="CmdPushScaling.h" />
-    <ClInclude Include="CmdPushTranslation.h" />
-    <ClInclude Include="CmdSetCameraDirection.h" />
-    <ClInclude Include="CmdSetCameraFar.h" />
-    <ClInclude Include="CmdSetCameraFOV.h" />
-    <ClInclude Include="CmdSetCameraNear.h" />
-    <ClInclude Include="CmdSetCameraPosition.h" />
-    <ClInclude Include="CmdSetClipping.h" />
-    <ClInclude Include="CmdSetColor.h" />
-    <ClInclude Include="CmdSetFillMode.h" />
-    <ClInclude Include="CmdSetResolution.h" />
-    <ClInclude Include="CmdSetViewport.h" />
-    <ClInclude Include="CmdShowViewport.h" />
-    <ClInclude Include="CmdVarFloat.h" />
-    <ClInclude Include="CmdVertex.h" />
-    <ClInclude Include="Command.h" />
-    <ClInclude Include="CommandDictionary.h" />
-    <ClInclude Include="DepthBuffer.h" />
-    <ClInclude Include="Graphics.h" />
     <ClInclude Include="MathHelper.h" />
     <ClInclude Include="Matrix4.h" />
-    <ClInclude Include="MatrixStack.h" />
     <ClInclude Include="PixEditor.h" />
-    <ClInclude Include="PrimitivesManager.h" />
-    <ClInclude Include="Rasterizer.h" />
     <ClInclude Include="ScriptParser.h" />
     <ClInclude Include="TextEditor.h" />
     <ClInclude Include="VariableCache.h" />
@@ -101,43 +158,226 @@
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vertex.h" />
     <ClInclude Include="Viewport.h" />
-    <ClInclude Include="CmdSetShadeMode.h" />
-    <ClInclude Include="CmdSetTexture.h" />
-    <ClInclude Include="CmdSetCorrectUV.h" />
-    <ClInclude Include="CmdSetAddressMode.h" />
-    <ClInclude Include="LightManager.h" />
     <ClInclude Include="TextureManager.h" />
     <ClInclude Include="Texture.h" />
-    <ClInclude Include="MaterialManager.h" />
-    <ClInclude Include="LightTypes.h" />
-    <ClInclude Include="CmdLights.h" />
-    <ClInclude Include="CmdMaterial.h" />
-    <ClInclude Include="CmdModel.h" />
-    <ClInclude Include="ModelManager.h" />
-    <ClInclude Include="CmdSetUseFilter.h" />
+    <ClInclude Include="Clipper.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdBeginDraw.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdDrawPixel.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdEnableDepth.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdEndDraw.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdForLoop.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLights.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdMaterial.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdModel.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdPopMatrix.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdPushRotationX.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdPushRotationY.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdPushRotationZ.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdPushScaling.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdPushTranslation.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetAddressMode.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCameraDirection.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCameraFar.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCameraFOV.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCameraNear.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCameraPosition.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetClipping.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetColor.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCorrectUV.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetCullMode.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetFillMode.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetResolution.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetShadeMode.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetTexture.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetUseFilter.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdSetViewport.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdShowViewport.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdVarFloat.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdVertex.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandDictionary.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthBuffer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LightManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LightTypes.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixStack.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitivesManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Rasterizer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imgui.ini" />
-    <None Include="Scripts\3d_cubes.pix" />
-    <None Include="Scripts\3d_directional_light.pix" />
-    <None Include="Scripts\3d_lighting.pix" />
-    <None Include="Scripts\3d_pipeline.pix" />
-    <None Include="Scripts\3d_point_light.pix" />
-    <None Include="Scripts\3d_spot_light.pix" />
-    <None Include="Scripts\3d_texturing_cube.pix" />
-    <None Include="Scripts\3d_texturing_perspective.pix" />
-    <None Include="Scripts\3d_triangles.pix" />
-    <None Include="Scripts\clipping.pix" />
-    <None Include="Scripts\clipping2.pix" />
-    <None Include="Scripts\fillmode.pix" />
-    <None Include="Scripts\guile.pix" />
-    <None Include="Scripts\lines.pix" />
-    <None Include="Scripts\lines2.pix" />
-    <None Include="Scripts\quad.pix" />
-    <None Include="Scripts\quad2.pix" />
-    <None Include="Scripts\test.pix" />
-    <None Include="Scripts\triangles.pix" />
-    <None Include="Scripts\triangles2.pix" />
     <None Include="xconfig.json" />
+    <None Include="Scripts\3d_cubes.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_directional_light.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_lighting.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_pipeline.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_point_light.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_spot_light.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_texturing_cube.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_texturing_perspective.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\3d_triangles.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\clipping.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\clipping2.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\fillmode.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\guile.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="imgui.ini">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\lines.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\lines2.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\test.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\quad2.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\quad.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\triangles2.pix">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="Scripts\triangles.pix">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{378dcd45-4d68-4012-9c6d-be0c143cb165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{c1d97414-9bc7-45af-a6b4-1c590013bf15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{181c7560-c744-4cbd-b21b-81c0e2a90026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{56d555cd-3cbe-4f37-a7fb-2c9c7a6dfb19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
