@@ -146,6 +146,9 @@
       <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="PostProcessing.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MathHelper.h" />
@@ -299,6 +302,9 @@
       <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Model.h" />
+    <ClInclude Include="PostProcessing.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="xconfig.json" />
