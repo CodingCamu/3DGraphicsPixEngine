@@ -3,6 +3,8 @@
 #include "CmdDrawPixel.h"
 #include "CmdSetResolution.h"
 #include "CmdVarFloat.h"
+#include "CmdVarInt.h"
+#include "CmdVarBool.h"
 #include "CmdSetColor.h"
 #include "CmdForLoop.h"
 #include "CmdSetFillMode.h"
@@ -38,6 +40,7 @@
 #include "CmdPushRotationZ.h"
 #include "CmdPushScaling.h"
 #include "CmdPopMatrix.h"
+#include "CmdPostProcessing.h"
 
 CommandDictionary* CommandDictionary::Get()
 {
@@ -62,7 +65,7 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetCameraFOV>();
 	RegisterCommand<CmdSetCameraNear>();
 	RegisterCommand<CmdSetCameraPosition>();
-	
+
 
 	// Matrix Setting
 	RegisterCommand<CmdPushTranslation>();
@@ -74,6 +77,8 @@ CommandDictionary::CommandDictionary()
 
 	// Variable commands
 	RegisterCommand<CmdVarFloat>();
+	RegisterCommand<CmdVarInt>();
+	RegisterCommand<CmdVarBool>();
 	RegisterCommand<CmdModel>();
 	RegisterCommand<CmdSetTexture>();
 
@@ -107,6 +112,11 @@ CommandDictionary::CommandDictionary()
 	RegisterCommand<CmdSetFillMode>();
 	RegisterCommand<CmdSetCullMode>();
 	RegisterCommand<CmdSetShadeMode>();
+
+	// Post Processing
+	RegisterCommand<CmdPostProcessingBeginDraw>();
+	RegisterCommand<CmdPostProcessingEndDraw>();
+	RegisterCommand<CmdPostProcessingSetEffectType>();
 }
 
 TextEditor::LanguageDefinition CommandDictionary::GenerateLanguageDefinition()
