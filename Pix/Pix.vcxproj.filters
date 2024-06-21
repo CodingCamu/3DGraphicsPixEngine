@@ -395,6 +395,9 @@
     <None Include="Scripts\triangles.pix">
       <Filter>Scripts</Filter>
     </None>
+    <None Include="..\..\..\..\Downloads\raytracing_basic.pix">
+      <Filter>Scripts</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Graphics">

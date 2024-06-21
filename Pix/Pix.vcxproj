@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\Downloads\raytracing_basic.pix" />
     <None Include="imgui.ini" />
     <None Include="Scripts\3d_cubes.pix" />
     <None Include="Scripts\3d_directional_light.pix" />
